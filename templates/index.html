@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevgililer Günü</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Beni çok seviyor musun?</h1>
+    <button id="yes">Evet</button>
+    <button id="no">Hayır</button>
+
+    <img id="celebration-gif" src="{{ url_for('static', filename='celebration.gif') }}" alt="Kutlama" style="display:none;">
+    <audio id="celebration-sound" src="{{ url_for('static', filename='celebration.mp3') }}"></audio>
+
+    <!-- Arka plan fotoğrafı -->
+    <img id="background" src="{{ url_for('static', filename='background1.jpg') }}" alt="Background">
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
